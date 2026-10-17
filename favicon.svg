@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+	<!-- 自繪圖示：深色底上的「Z」字與四角星形閃光（不使用原作素材） -->
+	<rect width="64" height="64" rx="12" fill="#10141f"/>
+	<path d="M14 13h36l-23 28h20l-5 10H10l23-28H14z" fill="#6af"/>
+	<path d="M53 40l2.5 7.5L63 50l-7.5 2.5L53 60l-2.5-7.5L43 50l7.5-2.5z" fill="#fd6"/>
+</svg>

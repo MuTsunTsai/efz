@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+		<title>ETERNAL FIGHTER ZERO - Web</title>
+		<!-- PWA：manifest 與圖示放在 public/，路徑加上基底路徑 -->
+		<link rel="manifest" href="/efz/manifest.webmanifest" />
+		<link rel="apple-touch-icon" href="/efz/icons/apple-touch-icon.png" />
+		<meta name="theme-color" content="#000000" />
+	<link rel="icon" href="/efz/favicon.svg" type="image/svg+xml"><script defer src="/efz/static/js/index.9df60fce83.js"></script><link href="/efz/static/css/index.9842a04b8c.css" rel="stylesheet"><script async src="https://www.googletagmanager.com/gtag/js?id=G-4GYC00FPRR"></script><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4GYC00FPRR');</script></head>
+	<body>
+		<!-- 文字由 src/i18n.ts 依瀏覽器語言填入（data-i18n） -->
+		<div id="boot">
+			<h1>ETERNAL FIGHTER ZERO <small>Web</small></h1>
+			<p data-i18n="intro"></p>
+			<div id="stored" hidden>
+				<p data-i18n="storedNotice"></p>
+				<button id="start" class="pick" type="button" data-i18n="start"></button>
+				<button id="clear" class="pick secondary" type="button" data-i18n="clear"></button>
+			</div>
+			<label class="pick">
+				<span id="pick-label" data-i18n="pick"></span>
+				<input id="folder" type="file" webkitdirectory multiple hidden />
+			</label>
+			<p class="hint" data-i18n="hint"></p>
+			<!-- 只在觸控裝置顯示（main.ts） -->
+			<label id="touch-option" class="touch-option" hidden>
+				<input id="touch-pad" type="checkbox" />
+				<span data-i18n="touchPad"></span>
+			</label>
+			<p id="status"></p>
+			<p class="legal-link"><span data-i18n="legalLink"></span> · <a href="#" id="legal-open" data-i18n="legalOpen"></a></p>
+		</div>
+		<dialog id="legal" class="legal">
+			<h2 data-i18n="legalTitle"></h2>
+			<p data-i18n="legal1"></p>
+			<p data-i18n="legal2"></p>
+			<p data-i18n="legal3"></p>
+			<p data-i18n="legal4"></p>
+			<p data-i18n="legal5"></p>
+			<p data-i18n="legal6"></p>
+			<p data-i18n="legal7"></p>
+			<form method="dialog">
+				<button class="pick" type="submit" data-i18n="close"></button>
+			</form>
+		</dialog>
+		<canvas id="screen" width="640" height="480" hidden></canvas>
+	</body>
+</html>
